@@ -10,6 +10,9 @@ services:
       DB_URL: jdbc:mysql://mysql:3306/eventos_db?createDatabaseIfNotExist=true&serverTimezone=UTC&allowPublicKeyRetrieval=true
       DB_USER_NAME: root
       DB_PASSWORD: klander
+      SECURITY_USER: drax182
+      SECURITY_PASSWORD: x845fg4
+
     restart: always
     depends_on:
       mysql:
