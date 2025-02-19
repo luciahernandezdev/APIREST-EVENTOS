@@ -25,7 +25,7 @@ Este proyecto es una aplicación de gestión de eventos desarrollada con **Sprin
    ```
 2. **Configurar variables de entorno**:
 - Asigna las siguiente variables de Entorno.
-```xml
+```bash
 
 spring.datasource.url=${DB_URL}
 
@@ -41,7 +41,8 @@ spring.datasource.password=${DB_PASSWORD}
 5. **Asegurate de que arranca la app con las nuevas variables insertadas.**
 5. **Configurar Docker Compose.**
     Asegúrate de que tienes un archivo docker-compose.yml en el directorio raíz del proyecto con el siguiente contenido:
-   ```yml
+ ```bash
+
 version: '3'
 
 services:
@@ -71,8 +72,10 @@ services:
       test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
       timeout: 10s
       retries: 10
-     ```
-    6. **Construir y ejecutar los contenedores Docker.**
+
+```
+
+6. **Construir y ejecutar los contenedores Docker.**
 
 ## 🚀 Uso y Endpoints de la API
 Esta sección detalla cómo utilizar los endpoints de la API para interactuar con el sistema de gestión de eventos. A continuación, se describen los principales endpoints disponibles para manejar eventos y participantes.
