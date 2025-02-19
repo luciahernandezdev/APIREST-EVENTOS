@@ -19,10 +19,10 @@ Este proyecto es una aplicación de gestión de eventos desarrollada con **Sprin
 ## ⚙️ Configuración del Entorno
 
 1. **Clonar el repositorio**:
-   ```bash
+ ```bash
    git clone https://github.com/luciahernandezdev/apirest-eventos.git
   
-   ```
+  ```
 2. **Configurar variables de entorno**:
 - Asigna las siguiente variables de Entorno.
 ```bash
@@ -52,7 +52,7 @@ services:
     ports:
       - "8080:8080"
     environment:
-      DB_URL: jdbc:mysql://mysql:3306/cursos?createDatabaseIfNotExist=true&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      DB_URL: jdbc:mysql://mysql:3306/evento_db?createDatabaseIfNotExist=true&serverTimezone=UTC&allowPublicKeyRetrieval=true
       DB_USER_NAME: root
       DB_PASSWORD: ROOT
     restart: always
@@ -66,7 +66,7 @@ services:
     environment:
       MYSQL_ROOT_PASSWORD: ROOT
       MYSQL_PASSWORD: ROOT
-      MYSQL_DATABASE: cursos
+      MYSQL_DATABASE: evento_db
     restart: always
     healthcheck:
       test: ["CMD", "mysqladmin" ,"ping", "-h", "localhost"]
@@ -78,7 +78,8 @@ services:
 6. **Construir y ejecutar los contenedores Docker.**
 
 ## 🚀 Uso y Endpoints de la API
-Esta sección detalla cómo utilizar los endpoints de la API para interactuar con el sistema de gestión de eventos. A continuación, se describen los principales endpoints disponibles para manejar eventos y participantes.
+Esta sección detalla cómo utilizar los endpoints de la API para interactuar con el sistema de gestión de eventos.
+A continuación, se describen los principales endpoints disponibles para manejar eventos y participantes.
 
 ## 📡 Endpoints Disponibles
 
