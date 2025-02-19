@@ -76,6 +76,22 @@ services:
 ```
 
 6. **Construir y ejecutar los contenedores Docker.**
+  1. Encendemos el Docker Desktop haciendo click en nuestro icono de escritorio.
+
+  2. Nos posicionaremos nuevamente en la carpeta donde se encuentra nuestro *`docker-compose`* y abriremos una nueva línea de comandos (consola/terminal).
+
+  3. Una vez allí ejecutaremos el comando *`docker-compose build`*  y comenzaras a visualizar unos comandos azules como estos.
+
+ ![compose](https://miro.medium.com/v2/resize:fit:1400/1*T1Ip2R105svnn4410AHIww.png)
+
+7. **Ejecutar y construir nuestro contenedor de App en Docker**
+  1. Nos posicionaremos nuevamente en la carpeta donde se encuentra nuestro *`docker-compose`* y abriremos una nueva línea de comandos (consola/terminal).
+
+ 2. Una vez allí ejecutaremos el comando *`docker-compose up`*  y comenzaras a visualizar unos comandos azules como estos.
+
+ ![Compilar App](https://www.sohamkamani.com/java/spring-rest-http-server/server-startup-terminal.png)
+
+ 3. Cuando veas el logo de Spring ya puedes ir a tu http://localhost:8080/doc y probar tu API. 
 
 ## 🚀 Uso y Endpoints de la API
 Esta sección detalla cómo utilizar los endpoints de la API para interactuar con el sistema de gestión de eventos.
